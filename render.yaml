@@ -1,0 +1,26 @@
+# One Render web service: builds the React dashboard and serves it from the Express API (same origin).
+services:
+  - type: web
+    name: nanopulse
+    runtime: node
+    plan: free
+    buildCommand: npm ci --include=dev --prefix frontend && npm run build --prefix frontend && npm ci --prefix backend
+    startCommand: npm start --prefix backend
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: NODE_ENV
+        value: production
+      - key: MONGO_URI
+        sync: false          # paste your MongoDB Atlas connection string
+      - key: JWT_SECRET
+        generateValue: true
+      - key: SEED_ADMIN_EMAIL
+        value: admin@nanopulse.local
+      - key: SEED_ADMIN_PASSWORD
+        sync: false          # choose a strong password; the admin is created on first start
+      - key: SEED_TECH_EMAIL
+        value: tech@nanopulse.local
+      - key: SEED_TECH_PASSWORD
+        sync: false

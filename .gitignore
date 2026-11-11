@@ -1,0 +1,15 @@
+node_modules/
+dist/
+coverage/
+.env
+.env.local
+*.log
+__pycache__/
+*.pyc
+.pytest_cache/
+agent/config.json
+agent/state/
+agent/logs/
+agent/safe_temp/
+.vscode/
+.DS_Store
