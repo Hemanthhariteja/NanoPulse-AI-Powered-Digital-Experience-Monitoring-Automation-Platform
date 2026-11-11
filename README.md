@@ -177,4 +177,5 @@ per-device baselines and the ML anomaly module in the live pipeline; ticketing i
 organisations; more remediation actions with per-action approval policies.
 #   N a n o P u l s e - A I - P o w e r e d - D i g i t a l - E x p e r i e n c e - M o n i t o r i n g - A u t o m a t i o n - P l a t f o r m  
  #   N a n o P u l s e - A I - P o w e r e d - D i g i t a l - E x p e r i e n c e - M o n i t o r i n g - A u t o m a t i o n - P l a t f o r m  
+ #   N a n o P u l s e - A I - P o w e r e d - D i g i t a l - E x p e r i e n c e - M o n i t o r i n g - A u t o m a t i o n - P l a t f o r m  
  
